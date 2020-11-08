@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "configurations",
+  "info": {
+    "name": "configuration",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "github_url": {
+      "type": "string"
+    },
+    "nick_name": {
+      "type": "string"
+    },
+    "blog_description": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "font_color": {
+      "type": "string"
+    },
+    "use_background_image": {
+      "type": "string"
+    },
+    "background_color_left": {
+      "type": "string"
+    },
+    "background_color_right": {
+      "type": "string"
+    },
+    "audio_url": {
+      "type": "string"
+    },
+    "audio_auto_play": {
+      "type": "string"
+    },
+    "web_sites": {
+      "collection": "web-sites"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "web_sites",
+  "info": {
+    "name": "web_sites"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

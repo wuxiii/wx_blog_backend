@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aricles",
+  "info": {
+    "name": "Aricles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "article_content": {
+      "type": "richtext"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "auther": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}
